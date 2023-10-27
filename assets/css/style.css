@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Muli;
+    src: url(../fonts/MuliDisplayVN-SemiBold.ttf);
+}
+
+html {
+    font-family: Muli;
+}
+
+#header {
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    position: fixed;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.topnav {
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    text-align: center;
+    padding: 20px 16px;
+    margin-right: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    color: #000;
+}
+
+.topnav img {
+    height: 50px;
+}
+
+.topnav a.img {
+    padding: 0;
+    padding-top: 5px;
+    margin: 0 50px;
+}
+
+.topnav .search-container {
+    position: absolute;
+    right: 0;
+    margin-right: 60px;
+}
+
+.topnav input {
+    padding: 12px;
+    margin-top: 10px;
+    font-size: 17px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    font-size: 14px;
+    width: 200px;
+}
+
+.topnav .search-container button {
+    float: right;
+    padding: 10px 6px;
+    margin-top: 12px;
+    background: #fff;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.topnav .login {
+    position: absolute;
+    right: 0;
+    margin: 14px 16px;
+    padding: 5px;
+    font-size: 20px;
+}
+
+#slider img {
+    width: 100%;
+    margin-top: 59px;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+h2 {
+    font-size: calc(1.325rem + .9vw);
+    margin: 20px 0;
+}
+
+#giayNam {
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    grid-template-rows: repeat(3, 250px);
+    grid-gap: 80px;
+
+
+    grid-template-areas: "content content content content";
+}
+
+.product img {
+    width: 300px;
+    height: 200px;
+}
+/* Giay nu */---
+#wrapper{ 
+    max-width: 100%;
+    margin: 2px auto;
+}
+/* canh lề hai bên */
+.products{
+    font-size: 20px;
+    line-height: 1.15;
+    color: #111;
+}
+.headline{
+    text-align: center;
+    margin: 40px 0px;
+}
+.headline h3{
+    position: sticky;
+    font-size: 30px;
+    float: left;
+    color: #111;
+    padding: 20px 10px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 50px;
+}
+ul.products{
+    width: 100%;
+    /* height: 100vh; */
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:  0 auto;
+}
+ul.products li{
+    flex-basis: 25%;
+    padding-left: 7px;
+    padding-right: 7px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    /* margin-right: 20px; */
+}
+ul.products li img{
+    max-width: 100%;
+    /* height: 100vh; */
+}
+ul.products li .product-infor a{
+    text-decoration: none;
+    display: inline-block;
+    max-width: 230px; /* Đặt kích thước tối đa của thẻ a */
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: black;
+}
+ul.products li .product-infor a.product-name{
+    color: black;
+    /* padding: 3px 0px; */
+    align-items: center;
+    text-align: center;
+    margin-right: 22px;
+    font-size: 15px;
+}
+
+.products li .product-item .product-infor {
+    align-items: center;
+    text-align: center; 
+    margin-top: 2px; 
+    color: black;
+}
