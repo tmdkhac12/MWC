@@ -128,7 +128,6 @@ h2 {
 .headline h3{
     position: sticky;
     font-size: 30px;
-    float: left;
     color: #111;
     padding: 20px 10px;
     text-transform: uppercase;
