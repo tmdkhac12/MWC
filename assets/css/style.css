@@ -87,29 +87,79 @@ html {
     margin-top: 59px;
 }
 
-.text-center {
-    text-align: center !important;
-}
-
-h2 {
-    font-size: calc(1.325rem + .9vw);
-    margin: 20px 0;
-}
-
 #giayNam {
-    display: grid;
-    grid-template-columns: repeat(4, 250px);
-    grid-template-rows: repeat(3, 250px);
-    grid-gap: 80px;
-
-
-    grid-template-areas: "content content content content";
+    max-width: 100%;
+    margin: 2px auto;
 }
 
-.product img {
+.product {
+    font-size: 20px;
+    line-height: 1.15;
+    color: #111;
+}
+
+.headln {
+    text-align: center;
+    margin: 40px 0px;
+}
+
+.headln h3 {
+    position: sticky;
+    font-size: 30px;
+    float: left;
+    color: #111;
+    padding: 20px 10px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 50px;
+}
+
+ul.product {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+ul.product li {
+    flex-basis: 25%;
+    padding-left: 7px;
+    padding-right: 7px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+ul.product li img {
     width: 300px;
-    height: 200px;
+    height: 300px;
 }
+
+ul.product li .product-in a {
+    text-decoration: none;
+    display: inline-block;
+    max-width: 230px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: black;
+}
+
+ul.product li .product-in a.product-ten {
+    color: black;
+    align-items: center;
+    text-align: center;
+    margin-right: 22px;
+    font-size: 15px;
+}
+
+.product-image .product-in {
+    align-items: center;
+    text-align: center;
+    margin-top: 4px;
+    color: black;
+}
+
 /* Giay nu */---
 #wrapper{ 
     max-width: 100%;
@@ -128,8 +178,8 @@ h2 {
 .headline h3{
     position: sticky;
     font-size: 30px;
-    color: #111;
     float: left;
+    color: #111;
     padding: 20px 10px;
     text-transform: uppercase;
     display: inline-block;
