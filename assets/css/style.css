@@ -168,7 +168,6 @@ body {
 .product-infor a {
     text-decoration: none;
     display: inline-block;
-    max-width: 230px;
     /* Đặt kích thước tối đa của thẻ a */
     text-overflow: ellipsis;
     color: black;
