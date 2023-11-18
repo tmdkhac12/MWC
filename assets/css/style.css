@@ -78,33 +78,20 @@ body {
     cursor: pointer;
 }
 
-/* login */
 .login button {
     background-color: #4CAF50;
-    /* Màu nền */
     border: none;
-    /* Không viền */
     color: white;
-    /* Màu chữ */
     padding: 13px 25px;
-    /* Đệm */
     text-align: center;
-    /* Căn giữa chữ */
     text-decoration: none;
-    /* Không gạch chân */
     display: inline-block;
     font-size: 16px;
-    /* Kích thước chữ */
     position: absolute;
-    /* Vị trí tuyệt đối */
     top: 10px;
-    /* Căn lề trên */
     right: 15px;
-    /* Căn lề phải */
     cursor: pointer;
-    /* Con trỏ chuột */
     border-radius: 12px;
-    /* Bo tròn góc */
 }
 
 #slider img {
