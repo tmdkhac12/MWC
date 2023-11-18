@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <script src="./main.js"></script>
     <div id="main">
         <div id="header">
             <div class="topnav">
@@ -21,8 +22,8 @@
                 <a href="giaynu.html">Giày Nữ</a>
                 <a href="#footer">Liên Hệ</a>
                 <div class="search-container">
-                    <form action="#main">
-                        <input type="text" placeholder="Tìm Kiếm..." name="search">
+                    <form id="search-form" action="./search_results.html" method="get" onsubmit="searchProducts(); return false;">
+                        <input type="text" placeholder="Tìm Kiếm..." name="search" id="search-input">
                         <button type="submit"><i class="fa fa-search"></i></button>
                     </form>
                 </div>
@@ -37,118 +38,118 @@
                 <div class="headline">
                     <h3>Giày Nam</h3>
                 </div>
-                <ul class="products">
-                    <li>
-                        <a href="product_details1.html" class="product-thump">
-                            <img src="./assets/image/giaynam/mwc.jpg" alt="">
-                        </a>
-                        <div class="product-infor">
-                            <a href="" class="product-name">Giày Thể Thao Nam MWC NATT- 5471</a><br>
-                            <a href="" class="product-price">270.000 đ</a><br>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="" class="product-thump">
-                            <img src="./assets/image/giaynam/mwc1.jpg" alt="">
-                        </a>
-                        <div class="product-infor">
-                            <a href="" class="product-name">Giày Thể Thao Nam MWC NATT- 5468</a><br>
-                            <a href="" class="product-price">275.000 đ</a><br>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="" class="product-thump">
-                            <img src="./assets/image/giaynam/mwc2.jpg" alt="">
-                        </a>
-                        <div class="product-infor">
-                            <a href="" class="product-name">Giày Thể Thao Nam MWC NATT- 5443</a><br>
-                            <a href="" class="product-price">275.000 đ</a><br>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="" class="product-thump">
-                            <img src="./assets/image/giaynam/mwc 4.jpg" alt="">
-                        </a>
-                        <div class="product-infor">
-                            <a href="" class="product-name">Giày Thể Thao Nam MWC NATT- 5467</a><br>
-                            <a href="" class="product-price">345.000 đ</a><br>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="" class="product-thump">
-                            <img src="./assets/image/giaynam/mwc 5.jpg" alt="">
-                        </a>
-                        <div class="product-infor">
-                            <a href="" class="product-name">Giày Thể Thao Nam MWC NATT- 5460</a><br>
-                            <a href="" class="product-price">275.000 đ</a><br>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="" class="product-thump">
-                            <img src="./assets/image/giaynam/mwc6.jpg" alt="">
-                        </a>
-                        <div class="product-infor">
-                            <a href="" class="product-name">Giày Thể Thao Nam MWC NATT- 5454</a><br>
-                            <a href="" class="product-price">295.000 đ</a><br>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="" class="product-thump">
-                            <img src="./assets/image/giaynam/mwc 7.jpg" alt="">
-                        </a>
-                        <div class="product-infor">
-                            <a href="" class="product-name">Giày Thể Thao Nam MWC NATT- 5453</a><br>
-                            <a href="" class="product-price">295.000 đ</a><br>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="" class="product-thump">
-                            <img src="./assets/image/giaynam/mwc8.jpg" alt="">
-                        </a>
-                        <div class="product-infor">
-                            <a href="" class="product-name">Giày Thể Thao Nam MWC NATT- 5466</a><br>
-                            <a href="" class="product-price">275.000 đ</a><br>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="" class="product-thump">
-                            <img src="./assets/image/giaynam/mwc9.jpg" alt="">
-                        </a>
-                        <div class="product-infor">
-                            <a href="" class="product-name">Giày Thể Thao Nam MWC NATT- 5470</a><br>
-                            <a href="" class="product-price">270.000 đ</a><br>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="" class="product-thump">
-                            <img src="./assets/image/giaynam/mwc10.jpg" alt="">
-                        </a>
-                        <div class="product-infor">
-                            <a href="" class="product-name">Giày Thể Thao Nam MWC NATT- 5469</a><br>
-                            <a href="" class="product-price">275.000 đ</a><br>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="" class="product-thump">
-                            <img src="./assets/image/giaynam/mwc11.jpg" alt="">
-                        </a>
-                        <div class="product-infor">
-                            <a href="" class="product-name">Giày Thể Thao Nam MWC NATT- 5466</a><br>
-                            <a href="" class="product-price">275.000 đ</a><br>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="" class="product-thump">
-                            <img src="./assets/image/giaynam/mwc12.jpg" alt="">
-                        </a>
-                        <div class="product-infor">
-                            <a href="" class="product-name">Giày Thể Thao Nam MWC NATT- 5462</a><br>
-                            <a href="" class="product-price">275.000 đ</a><br>
-                        </div>
-
-                    </li>
-                </ul>
             </div>
+            <ul class="products">
+                <li data-name="Giày Thể Thao Nam MWC NATT-5471" data-price="270000">
+                    <a href="product_details1.html" class="product-thump">
+                        <img src="./assets/image/giaynam/mwc.jpg" alt="">
+                    </a>
+                    <div class="product-infor">
+                        <a href="" class="product-name">Giày Thể Thao Nam MWC NATT- 5471</a><br>
+                        <a href="" class="product-price">270.000 đ</a><br>
+                    </div>
+                </li>
+                <li data-name="Giày Thể Thao Nam MWC NATT-5468" data-price="275000">
+                    <a href="product_details1.html" class="product-thump">
+                        <img src="./assets/image/giaynam/mwc1.jpg" alt="">
+                    </a>
+                    <div class="product-infor">
+                        <a href="" class="product-name">Giày Thể Thao Nam MWC NATT- 5468</a><br>
+                        <a href="" class="product-price">275.000 đ</a><br>
+                    </div>
+                </li>
+                <li data-name="Giày Thể Thao Nam MWC NATT-5443" data-price="275000">
+                    <a href="product_details1.html" class="product-thump">
+                        <img src="./assets/image/giaynam/mwc2.jpg" alt="">
+                    </a>
+                    <div class="product-infor">
+                        <a href="" class="product-name">Giày Thể Thao Nam MWC NATT- 5443</a><br>
+                        <a href="" class="product-price">275.000 đ</a><br>
+                    </div>
+                </li>
+                <li data-name="Giày Thể Thao Nam MWC NATT-5467" data-price="345000">
+                    <a href="product_details1.html" class="product-thump">
+                        <img src="./assets/image/giaynam/mwc 4.jpg" alt="">
+                    </a>
+                    <div class="product-infor">
+                        <a href="" class="product-name">Giày Thể Thao Nam MWC NATT- 5467</a><br>
+                        <a href="" class="product-price">345.000 đ</a><br>
+                    </div>
+                </li>
+                <li data-name="Giày Thể Thao Nam MWC NATT-5460" data-price="275000">
+                    <a href="product_details1.html" class="product-thump">
+                        <img src="./assets/image/giaynam/mwc 5.jpg" alt="">
+                    </a>
+                    <div class="product-infor">
+                        <a href="" class="product-name">Giày Thể Thao Nam MWC NATT- 5460</a><br>
+                        <a href="" class="product-price">275.000 đ</a><br>
+                    </div>
+                </li>
+                <li data-name="Giày Thể Thao Nam MWC NATT-5454" data-price="295000">
+                    <a href="product_details1.html" class="product-thump">
+                        <img src="./assets/image/giaynam/mwc6.jpg" alt="">
+                    </a>
+                    <div class="product-infor">
+                        <a href="" class="product-name">Giày Thể Thao Nam MWC NATT- 5454</a><br>
+                        <a href="" class="product-price">295.000 đ</a><br>
+                    </div>
+                </li>
+                <li data-name="Giày Thể Thao Nam MWC NATT-5453" data-price="295000">
+                    <a href="product_details1.html" class="product-thump">
+                        <img src="./assets/image/giaynam/mwc 7.jpg" alt="">
+                    </a>
+                    <div class="product-infor">
+                        <a href="" class="product-name">Giày Thể Thao Nam MWC NATT- 5453</a><br>
+                        <a href="" class="product-price">295.000 đ</a><br>
+                    </div>
+                </li>
+                <li data-name="Giày Thể Thao Nam MWC NATT-5466" data-price="275000">
+                    <a href="product_details1.html" class="product-thump">
+                        <img src="./assets/image/giaynam/mwc8.jpg" alt="">
+                    </a>
+                    <div class="product-infor">
+                        <a href="" class="product-name">Giày Thể Thao Nam MWC NATT- 5466</a><br>
+                        <a href="" class="product-price">275.000 đ</a><br>
+                    </div>
+                </li>
+                <li data-name="Giày Thể Thao Nam MWC NATT-5470" data-price="270000">
+                    <a href="product_details1.html" class="product-thump">
+                        <img src="./assets/image/giaynam/mwc9.jpg" alt="">
+                    </a>
+                    <div class="product-infor">
+                        <a href="" class="product-name">Giày Thể Thao Nam MWC NATT- 5470</a><br>
+                        <a href="" class="product-price">270.000 đ</a><br>
+                    </div>
+                </li>
+                <li data-name="Giày Thể Thao Nam MWC NATT-5469" data-price="275000">
+                    <a href="product_details1.html" class="product-thump">
+                        <img src="./assets/image/giaynam/mwc10.jpg" alt="">
+                    </a>
+                    <div class="product-infor">
+                        <a href="" class="product-name">Giày Thể Thao Nam MWC NATT- 5469</a><br>
+                        <a href="" class="product-price">275.000 đ</a><br>
+                    </div>
+                </li>
+                <li data-name="Giày Thể Thao Nam MWC NATT-5466" data-price="275000">
+                    <a href="product_details1.html" class="product-thump">
+                        <img src="./assets/image/giaynam/mwc11.jpg" alt="">
+                    </a>
+                    <div class="product-infor">
+                        <a href="" class="product-name">Giày Thể Thao Nam MWC NATT- 5466</a><br>
+                        <a href="" class="product-price">275.000 đ</a><br>
+                    </div>
+                </li>
+                <li data-name="Giày Thể Thao Nam MWC NATT-5462" data-price="275000">
+                    <a href="product_details1.html" class="product-thump">
+                        <img src="./assets/image/giaynam/mwc12.jpg" alt="">
+                    </a>
+                    <div class="product-infor">
+                        <a href="" class="product-name">Giày Thể Thao Nam MWC NATT- 5462</a><br>
+                        <a href="" class="product-price">275.000 đ</a><br>
+                    </div>
+
+                </li>
+            </ul>
         </div>
 
         <div id="footer">

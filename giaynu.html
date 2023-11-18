@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <script src="./main.js"></script>
     <div id="main">
         <div id="header">
             <div class="topnav">
@@ -21,8 +22,8 @@
                 <a href="#giayNu">Giày Nữ</a>
                 <a href="#footer">Liên Hệ</a>
                 <div class="search-container">
-                    <form action="#main">
-                        <input type="text" placeholder="Tìm Kiếm..." name="search">
+                    <form id="search-form" action="./search_results.html" method="get" onsubmit="searchProducts(); return false;">
+                        <input type="text" placeholder="Tìm Kiếm..." name="search" id="search-input">
                         <button type="submit"><i class="fa fa-search"></i></button>
                     </form>
                 </div>
@@ -38,7 +39,7 @@
                     <h3>Giày nữ</h3>
                 </div>
                 <ul class="products">
-                    <li>
+                    <li data-name="Giày cao gót MWC NUCG- 4437" data-price="250000">
                         <a href="product_details.html" class="product-thump">
                             <img src="./assets/image/giaynu/mwc_main.jpg" alt="">
                         </a>
@@ -48,8 +49,8 @@
                             <!-- <div class="product-price">295.000 đ</div> -->
                         </div>
                     </li>
-                    <li>
-                        <a href="" class="product-thump">
+                    <li data-name="Giày cao gót MWC NUCG- 4443" data-price="195000">
+                        <a href="product_details.html" class="product-thump">
                             <img src="./assets/image/giaynu/giay2.jpg" alt="">
                         </a>
                         <div class="product-infor">
@@ -58,8 +59,8 @@
                             <!-- <div class="product-price">195.000 đ</div> -->
                         </div>
                     </li>
-                    <li>
-                        <a href="" class="product-thump">
+                    <li data-name="Giày cao gót MWC NUCG- 4432" data-price="275000">
+                        <a href="product_details.html" class="product-thump">
                             <img src="./assets/image/giaynu/giay3.jpg" alt="">
                         </a>
                         <div class="product-infor">
@@ -68,8 +69,8 @@
                             <!-- <div class="product-price">275.000 đ</div> -->
                         </div>
                     </li>
-                    <li>
-                        <a href="" class="product-thump">
+                    <li data-name="Giày cao gót MWC NUCG- 4416" data-price="235000">
+                        <a href="product_details.html" class="product-thump">
                             <img src="./assets/image/giaynu/giay4.jpg" alt="">
                         </a>
                         <div class="product-infor">
@@ -78,8 +79,8 @@
                             <!-- <div class="product-price">235.000 đ</div> -->
                         </div>
                     </li>
-                    <li>
-                        <a href="" class="product-thump">
+                    <li data-name="Giày cao gót MWC NUCG- 4440" data-price="250000">
+                        <a href="product_details.html" class="product-thump">
                             <img src="./assets/image/giaynu/giay5.jpg" alt="">
                         </a>
                         <div class="product-infor">
@@ -88,8 +89,8 @@
                             <!-- <div class="product-price">250.000 đ</div> -->
                         </div>
                     </li>
-                    <li>
-                        <a href="" class="product-thump">
+                    <li data-name="Giày cao gót MWC NUCG- 4435" data-price="235000">
+                        <a href="product_details.html" class="product-thump">
                             <img src="./assets/image/giaynu/giay6.jpg" alt="">
                         </a>
                         <div class="product-infor">
@@ -98,8 +99,8 @@
                             <!-- <div class="product-price">235.000 đ</div> -->
                         </div>
                     </li>
-                    <li>
-                        <a href="" class="product-thump">
+                    <li data-name="Giày cao gót MWC NUCG- 4441" data-price="235000">
+                        <a href="product_details.html" class="product-thump">
                             <img src="./assets/image/giaynu/giay7.jpg" alt="">
                         </a>
                         <div class="product-infor">
@@ -108,8 +109,8 @@
                             <!-- <div class="product-price">235.000 đ</div> -->
                         </div>
                     </li>
-                    <li>
-                        <a href="" class="product-thump">
+                    <li data-name="Giày cao gót MWC NUTT- A103" data-price="295000">
+                        <a href="product_details.html" class="product-thump">
                             <img src="./assets/image/giaynu/giay5.jpg" alt="">
                         </a>
                         <div class="product-infor">
@@ -118,8 +119,8 @@
                             <!-- <div class="product-price">295.000 đ</div> -->
                         </div>
                     </li>
-                    <li>
-                        <a href="" class="product-thump">
+                    <li data-name="Giày cao gót MWC NUCG- 4440" data-price="250000">
+                        <a href="product_details.html" class="product-thump">
                             <img src="./assets/image/giaynu/giay9.jpg" alt="">
                         </a>
                         <div class="product-infor">
@@ -128,8 +129,8 @@
                             <!-- <div class="product-price">250.000 đ</div> -->
                         </div>
                     </li>
-                    <li>
-                        <a href="" class="product-thump">
+                    <li data-name="Giày cao gót MWC NUCG- 4440" data-price="250000">
+                        <a href="product_details.html" class="product-thump">
                             <img src="./assets/image/giaynu/giay10.jpg" alt="">
                         </a>
                         <div class="product-infor">
@@ -138,8 +139,8 @@
                             <!-- <div class="product-price">250.000 đ</div> -->
                         </div>
                     </li>
-                    <li>
-                        <a href="" class="product-thump">
+                    <li data-name="Giày cao gót MWC NUCG- 4440" data-price="250000">
+                        <a href="product_details.html" class="product-thump">
                             <img src="./assets/image/giaynu/giay11.jpg" alt="">
                         </a>
                         <div class="product-infor">
@@ -149,8 +150,8 @@
                         </div>
 
                     </li>
-                    <li>
-                        <a href="" class="product-thump">
+                    <li data-name="Giày cao gót MWC NUCG- 4440" data-price="250000">
+                        <a href="product_details.html" class="product-thump">
                             <img src="./assets/image/giaynu/giay12.jpg" alt="">
                         </a>
                         <div class="product-infor">
