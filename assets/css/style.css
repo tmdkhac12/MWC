@@ -79,7 +79,7 @@ body {
 }
 
 .login button {
-    background-color: #4CAF50;
+    background-color: rgba(0, 0, 0, 0.75);
     border: none;
     color: white;
     padding: 13px 25px;

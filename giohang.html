@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách giỏ hàng</title>
+    <link rel="icon" type="image/x-icon" href="./assets/image/favicon.png">
+    <script src="https://kit.fontawesome.com/646858dce8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/giohang.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        img {
+            width: 70px;
+        }
+
+        .item-gio-hang {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .gio-hang {
+            border: 1px solid white;
+            padding: 20px;
+            margin: auto;
+            margin-top: 20px;
+            max-width: 1200px;
+            box-shadow: 2px 2px 4px white;
+        }
+
+        .item-gio-hang .hinhanh img {
+            width: 60px;
+            height: 60px;
+        }
+
+        .item-gio-hang .hinhanh,
+        .Tongtien,
+        .Hanhdong {
+            flex: 1;
+            padding: 5px;
+            margin-left: 30px;
+        }
+
+        .item-gio-hang .soluong {
+            margin-right: 20px;
+            padding: 5px;
+        }
+
+        .item-gio-hang .gia {
+            flex: 2;
+            padding: 5px;
+        }
+
+        input {
+            padding: 10px;
+            border: 1px solid white;
+            border-radius: 10px;
+        }
+
+        .item-gio-hang .ten {
+            flex: 3;
+            padding: 4px;
+        }
+    </style>
+</head>
+
+<div class="gio-hang">
+    <div class="item-gio-hang">
+        <div class="hinhanh">
+            <img src="./assets/image/GiayNam/mwc 5.jpg">
+        </div>
+        <div class="ten">Giày Thể Thao Nam MWC NATT- 5488</div>
+        <span class="gia">375.000 đ</span>
+        <input type="number" class="soluong" value="1">
+        <p class="Tongtien">375.000</p>
+        <div class="Hanhdong">
+            <i class="fa-solid fa-trash"></i>
+        </div>
+    </div>
+</div>
+
+<body>
+
+</body>
+
+</html>
