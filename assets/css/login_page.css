@@ -1,5 +1,119 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
+/* Header */
+@font-face {
+  font-family: Muli;
+  src: url(../fonts/MuliDisplayVN-SemiBold.ttf);
+}
+
+html {
+  font-family: Muli;
+}
+
+body {
+  background-color: #fff;
+}
+
+#header {
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  position: fixed;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.topnav {
+  overflow: hidden;
+}
+
+.topnav > a {
+  float: left;
+  text-align: center;
+  padding: 20px 16px;
+  margin-right: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  color: #000;
+}
+
+.topnav img {
+  height: 50px;
+}
+
+.topnav a.img {
+  padding: 0;
+  padding-top: 5px;
+  margin: 0 50px;
+}
+
+.topnav .search-container {
+  position: absolute;
+  right: 0;
+  margin-right: 150px;
+}
+
+.topnav input {
+  padding: 12px;
+  margin-top: 10px;
+  font-size: 17px;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  font-size: 14px;
+  width: 200px;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 10px 6px;
+  margin-top: 12px;
+  background: #fff;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.login button {
+  background-color: rgba(0, 0, 0, 0.75);
+  border: none;
+  color: white;
+  padding: 13px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+#user {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 12px;
+  width: 10%;
+}
+
+#user a {
+  display: inline-block;
+  position: absolute;
+  bottom: 5px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #999;
+}
+
+#user p {
+  display: inline-block;
+  position: absolute;
+}
+
+/* Login form */
 .login-page {
   /* width: 360px; */
   width: 100%;
@@ -12,7 +126,6 @@
 }
 
 .form {
-  position: relative;
   z-index: 1;
   width: 35%;
   background: #FFFFFF;
@@ -93,8 +206,94 @@
   color: #EF3B3A;
 }
 body {
-  background: #999;
+  background: #fff;
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;      
+}
+/* Footer */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 22%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
 }

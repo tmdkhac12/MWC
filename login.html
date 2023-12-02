@@ -1,28 +1,104 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="./assets/css/login_page.css">
-    </head>
-    <body>
-        <a href="./index.html">
-            <h1>Quay lai</h1>
-        </a>
-        <div class="login-page">
-            <div class="form">
-              <form class="login-form" onsubmit="redirectToIndex()">
-                <input type="text" placeholder="username"/>
-                <input type="password" placeholder="password"/>
+
+<head>
+    <link rel="stylesheet" href="./assets/css/login_page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="topnav">
+            <a href="./index.html" class="img">
+                <img src="./assets/image/logo.png" alt="">
+            </a>
+            <a href="giaynam.html">Giày Nam</a>
+            <a href="giaynu.html">Giày Nữ</a>
+            <a href="#footer">Liên Hệ</a>
+            <div class="search-container">
+                <form id="search-form" action="./search_results.html" method="get"
+                    onsubmit="searchProducts(); return false;">
+                    <input type="text" placeholder="Tìm Kiếm..." name="search" id="search-input">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+            <a href="login.html" class="login">
+                <button id="login-button">Đăng nhập</button>
+            </a>
+        </div>
+    </div>
+
+    <div class="login-page">
+        <div class="form">
+            <form class="login-form" onsubmit="return redirectToIndex()">
+                <input id="username" type="text" placeholder="username" />
+                <input id="password" type="password" placeholder="password" />
                 <button type="submit">login</button>
                 <p class="message">Not registered? <a href="#">Create an account</a></p>
-              </form>
-            </div>
+            </form>
         </div>
+    </div>
 
-        <script>
-            function redirectToIndex() {
-                window.location.href = "./index.html";
-                return false; // Ngăn form gửi đi
-            }
-        </script>
-    </body>
+    <div id="footer">
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>company</h4>
+                        <ul>
+                            <li><a href="#">about us</a></li>
+                            <li><a href="#">our services</a></li>
+                            <li><a href="#">privacy policy</a></li>
+                            <li><a href="#">affiliate program</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>get help</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">shipping</a></li>
+                            <li><a href="#">returns</a></li>
+                            <li><a href="#">order status</a></li>
+                            <li><a href="#">payment options</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>online shop</h4>
+                        <ul>
+                            <li><a href="#">watch</a></li>
+                            <li><a href="#">bag</a></li>
+                            <li><a href="#">shoes</a></li>
+                            <li><a href="#">dress</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>follow us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        function redirectToIndex() {
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+            // Lưu trữ thông tin người dùng
+            localStorage.setItem('username', username);
+            localStorage.setItem('password', password);
+            // Chuyển hướng người dùng đến trang chủ
+            window.location.href = "./logged_in.html";
+            return false; // Ngăn form gửi đi
+        }
+    </script>
+</body>
+
 </html>

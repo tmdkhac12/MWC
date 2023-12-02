@@ -8,39 +8,168 @@
     <link rel="icon" type="image/x-icon" href="./assets/image/favicon.png">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 
 <body>
     <div id="main">
         <div id="header">
             <div class="topnav">
-                <a href="index.html" class="img">
+                <a href="./logged_in.html" class="img">
                     <img src="./assets/image/logo.png" alt="">
                 </a>
                 <a href="giaynam.html">Giày Nam</a>
-                <a href="#giayNu">Giày Nữ</a>
+                <a href="giaynu.html">Giày Nữ</a>
                 <a href="#footer">Liên Hệ</a>
                 <div class="search-container">
-                    <form id="search-form" action="" method="get" onsubmit="searchProducts(); return false;">
+                    <form id="search-form" action="./search_results.html" method="get" onsubmit="searchProducts(); return false;">
                         <input type="text" placeholder="Tìm Kiếm..." name="search" id="search-input">
                         <button type="submit"><i class="fa fa-search"></i></button>
                     </form>
                 </div>
-                <a href="login.html" class="login">
-                    <button class="">Đăng nhập</button>
-                </a>
+                <div id="user">
+                    <img src="./assets/image/user_icon.png" alt="User Icon" id="user-icon">
+                    <p>Hi, <b>abc</b></p>
+                    <a href="./index.html">logout</a>
+                </div>
             </div>
         </div>
 
-        <div id="giayNu" style="padding-top: 65px;">
+
+        <div id="slider">
+            <img src="./assets/image/slider.jpg" alt="">
+        </div>
+
+        <!-- Giày nam -->
+
+        <div id="giayNam">
+            <div id="wrapper">
+                <div class="headline">
+                    <h3>Giày Nam</h3>
+                </div>
+            </div>
+            <ul class="products">
+                <li data-name="Giày Thể Thao Nam MWC NATT-5471" data-price="270000">
+                    <a href="loged_product_details1.html" class="product-thump">
+                        <img src="./assets/image/giaynam/mwc.jpg" alt="">
+                    </a>
+                    <div class="product-infor">
+                        <a href="" class="product-name">Giày Thể Thao Nam MWC NATT- 5471</a><br>
+                        <a href="" class="product-price">270.000 đ</a><br>
+                    </div>
+                </li>
+                <li data-name="Giày Thể Thao Nam MWC NATT-5468" data-price="275000">
+                    <a href="loged_product_details1.html" class="product-thump">
+                        <img src="./assets/image/giaynam/mwc1.jpg" alt="">
+                    </a>
+                    <div class="product-infor">
+                        <a href="" class="product-name">Giày Thể Thao Nam MWC NATT- 5468</a><br>
+                        <a href="" class="product-price">275.000 đ</a><br>
+                    </div>
+                </li>
+                <li data-name="Giày Thể Thao Nam MWC NATT-5443" data-price="275000">
+                    <a href="loged_product_details1.html" class="product-thump">
+                        <img src="./assets/image/giaynam/mwc2.jpg" alt="">
+                    </a>
+                    <div class="product-infor">
+                        <a href="" class="product-name">Giày Thể Thao Nam MWC NATT- 5443</a><br>
+                        <a href="" class="product-price">275.000 đ</a><br>
+                    </div>
+                </li>
+                <li data-name="Giày Thể Thao Nam MWC NATT-5467" data-price="345000">
+                    <a href="loged_product_details1.html" class="product-thump">
+                        <img src="./assets/image/giaynam/mwc 4.jpg" alt="">
+                    </a>
+                    <div class="product-infor">
+                        <a href="" class="product-name">Giày Thể Thao Nam MWC NATT- 5467</a><br>
+                        <a href="" class="product-price">345.000 đ</a><br>
+                    </div>
+                </li>
+                <li data-name="Giày Thể Thao Nam MWC NATT-5460" data-price="275000">
+                    <a href="loged_product_details1.html" class="product-thump">
+                        <img src="./assets/image/giaynam/mwc 5.jpg" alt="">
+                    </a>
+                    <div class="product-infor">
+                        <a href="" class="product-name">Giày Thể Thao Nam MWC NATT- 5460</a><br>
+                        <a href="" class="product-price">275.000 đ</a><br>
+                    </div>
+                </li>
+                <li data-name="Giày Thể Thao Nam MWC NATT-5454" data-price="295000">
+                    <a href="loged_product_details1.html" class="product-thump">
+                        <img src="./assets/image/giaynam/mwc6.jpg" alt="">
+                    </a>
+                    <div class="product-infor">
+                        <a href="" class="product-name">Giày Thể Thao Nam MWC NATT- 5454</a><br>
+                        <a href="" class="product-price">295.000 đ</a><br>
+                    </div>
+                </li>
+                <li data-name="Giày Thể Thao Nam MWC NATT-5453" data-price="295000">
+                    <a href="loged_product_details1.html" class="product-thump">
+                        <img src="./assets/image/giaynam/mwc 7.jpg" alt="">
+                    </a>
+                    <div class="product-infor">
+                        <a href="" class="product-name">Giày Thể Thao Nam MWC NATT- 5453</a><br>
+                        <a href="" class="product-price">295.000 đ</a><br>
+                    </div>
+                </li>
+                <li data-name="Giày Thể Thao Nam MWC NATT-5466" data-price="275000">
+                    <a href="loged_product_details1.html" class="product-thump">
+                        <img src="./assets/image/giaynam/mwc8.jpg" alt="">
+                    </a>
+                    <div class="product-infor">
+                        <a href="" class="product-name">Giày Thể Thao Nam MWC NATT- 5466</a><br>
+                        <a href="" class="product-price">275.000 đ</a><br>
+                    </div>
+                </li>
+                <li data-name="Giày Thể Thao Nam MWC NATT-5470" data-price="270000">
+                    <a href="loged_product_details1.html" class="product-thump">
+                        <img src="./assets/image/giaynam/mwc9.jpg" alt="">
+                    </a>
+                    <div class="product-infor">
+                        <a href="" class="product-name">Giày Thể Thao Nam MWC NATT- 5470</a><br>
+                        <a href="" class="product-price">270.000 đ</a><br>
+                    </div>
+                </li>
+                <li data-name="Giày Thể Thao Nam MWC NATT-5469" data-price="275000">
+                    <a href="loged_product_details1.html" class="product-thump">
+                        <img src="./assets/image/giaynam/mwc10.jpg" alt="">
+                    </a>
+                    <div class="product-infor">
+                        <a href="" class="product-name">Giày Thể Thao Nam MWC NATT- 5469</a><br>
+                        <a href="" class="product-price">275.000 đ</a><br>
+                    </div>
+                </li>
+                <li data-name="Giày Thể Thao Nam MWC NATT-5466" data-price="275000">
+                    <a href="loged_product_details1.html" class="product-thump">
+                        <img src="./assets/image/giaynam/mwc11.jpg" alt="">
+                    </a>
+                    <div class="product-infor">
+                        <a href="" class="product-name">Giày Thể Thao Nam MWC NATT- 5466</a><br>
+                        <a href="" class="product-price">275.000 đ</a><br>
+                    </div>
+                </li>
+                <li data-name="Giày Thể Thao Nam MWC NATT-5462" data-price="275000">
+                    <a href="loged_product_details1.html" class="product-thump">
+                        <img src="./assets/image/giaynam/mwc12.jpg" alt="">
+                    </a>
+                    <div class="product-infor">
+                        <a href="" class="product-name">Giày Thể Thao Nam MWC NATT- 5462</a><br>
+                        <a href="" class="product-price">275.000 đ</a><br>
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div id="giayNu">
             <div id="wrapper">
                 <div class="headline">
                     <h3>Giày nữ</h3>
                 </div>
                 <ul class="products">
                     <li data-name="Giày cao gót MWC NUCG- 4437" data-price="250000">
-                        <a href="product_details.html" class="product-thump">
+                        <a href="loged_product_details.html" class="product-thump">
                             <img src="./assets/image/giaynu/mwc_main.jpg" alt="">
                         </a>
                         <div class="product-infor">
@@ -50,7 +179,7 @@
                         </div>
                     </li>
                     <li data-name="Giày cao gót MWC NUCG- 4443" data-price="195000">
-                        <a href="product_details.html" class="product-thump">
+                        <a href="loged_product_details.html" class="product-thump">
                             <img src="./assets/image/giaynu/giay2.jpg" alt="">
                         </a>
                         <div class="product-infor">
@@ -60,7 +189,7 @@
                         </div>
                     </li>
                     <li data-name="Giày cao gót MWC NUCG- 4432" data-price="275000">
-                        <a href="product_details.html" class="product-thump">
+                        <a href="loged_product_details.html" class="product-thump">
                             <img src="./assets/image/giaynu/giay3.jpg" alt="">
                         </a>
                         <div class="product-infor">
@@ -70,7 +199,7 @@
                         </div>
                     </li>
                     <li data-name="Giày cao gót MWC NUCG- 4416" data-price="235000">
-                        <a href="product_details.html" class="product-thump">
+                        <a href="loged_product_details.html" class="product-thump">
                             <img src="./assets/image/giaynu/giay4.jpg" alt="">
                         </a>
                         <div class="product-infor">
@@ -80,7 +209,7 @@
                         </div>
                     </li>
                     <li data-name="Giày cao gót MWC NUCG- 4440" data-price="250000">
-                        <a href="product_details.html" class="product-thump">
+                        <a href="loged_product_details.html" class="product-thump">
                             <img src="./assets/image/giaynu/giay5.jpg" alt="">
                         </a>
                         <div class="product-infor">
@@ -90,7 +219,7 @@
                         </div>
                     </li>
                     <li data-name="Giày cao gót MWC NUCG- 4435" data-price="235000">
-                        <a href="product_details.html" class="product-thump">
+                        <a href="loged_product_details.html" class="product-thump">
                             <img src="./assets/image/giaynu/giay6.jpg" alt="">
                         </a>
                         <div class="product-infor">
@@ -100,7 +229,7 @@
                         </div>
                     </li>
                     <li data-name="Giày cao gót MWC NUCG- 4441" data-price="235000">
-                        <a href="product_details.html" class="product-thump">
+                        <a href="loged_product_details.html" class="product-thump">
                             <img src="./assets/image/giaynu/giay7.jpg" alt="">
                         </a>
                         <div class="product-infor">
@@ -110,7 +239,7 @@
                         </div>
                     </li>
                     <li data-name="Giày cao gót MWC NUTT- A103" data-price="295000">
-                        <a href="product_details.html" class="product-thump">
+                        <a href="loged_product_details.html" class="product-thump">
                             <img src="./assets/image/giaynu/giay5.jpg" alt="">
                         </a>
                         <div class="product-infor">
@@ -120,7 +249,7 @@
                         </div>
                     </li>
                     <li data-name="Giày cao gót MWC NUCG- 4440" data-price="250000">
-                        <a href="product_details.html" class="product-thump">
+                        <a href="loged_product_details.html" class="product-thump">
                             <img src="./assets/image/giaynu/giay9.jpg" alt="">
                         </a>
                         <div class="product-infor">
@@ -130,7 +259,7 @@
                         </div>
                     </li>
                     <li data-name="Giày cao gót MWC NUCG- 4440" data-price="250000">
-                        <a href="product_details.html" class="product-thump">
+                        <a href="loged_product_details.html" class="product-thump">
                             <img src="./assets/image/giaynu/giay10.jpg" alt="">
                         </a>
                         <div class="product-infor">
@@ -140,7 +269,7 @@
                         </div>
                     </li>
                     <li data-name="Giày cao gót MWC NUCG- 4440" data-price="250000">
-                        <a href="product_details.html" class="product-thump">
+                        <a href="loged_product_details.html" class="product-thump">
                             <img src="./assets/image/giaynu/giay11.jpg" alt="">
                         </a>
                         <div class="product-infor">
@@ -151,7 +280,7 @@
 
                     </li>
                     <li data-name="Giày cao gót MWC NUCG- 4440" data-price="250000">
-                        <a href="product_details.html" class="product-thump">
+                        <a href="loged_product_details.html" class="product-thump">
                             <img src="./assets/image/giaynu/giay12.jpg" alt="">
                         </a>
                         <div class="product-infor">
@@ -163,6 +292,7 @@
                 </ul>
             </div>
         </div>
+
 
         <div id="footer">
             <footer class="footer">
@@ -207,11 +337,10 @@
                         </div>
                     </div>
                 </div>
-           </footer>
+            </footer>
         </div>
-    </div>
 
-    
+    </div>
 </body>
 
 </html>

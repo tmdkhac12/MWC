@@ -30,7 +30,7 @@ body {
     overflow: hidden;
 }
 
-.topnav a {
+.topnav > a {
     float: left;
     text-align: center;
     padding: 20px 16px;
@@ -92,6 +92,28 @@ body {
     right: 15px;
     cursor: pointer;
     border-radius: 12px;
+}
+
+#user {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 12px;
+    width: 10%;
+}
+
+#user a {
+    display: inline-block;
+    position: absolute;
+    bottom: 5px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #999;
+}
+
+#user p {
+    display: inline-block;
+    position: absolute;
 }
 
 #slider img {
@@ -306,30 +328,17 @@ a.product-name {
 
 .box button {
     font-size: 18px;
-    padding: 8px 25px;
+    padding: 12px 25px;
     border: none;
     outline: none;
     border-radius: 6px;
     cursor: pointer;
-    margin-top: px;
+    background-color: red;
     border: 1px solid rgba(169, 11, 11, 0.775);
 }
 
-.buy {
-    background-color: rgba(255, 0, 0, 0.672);
-    margin-right: 20px;
-}
-
-.add {
-    background-color: white;
-}
-
-.buy:hover {
-    background-color: red;
-}
-
 .add:hover {
-    background-color: rgba(218, 218, 227, 0.716);
+    background-color: rgba(169, 11, 11, 0.775);
 }
 
 .product-details {
@@ -576,3 +585,40 @@ ul {
         width: 100%;
     }
 }
+
+#user-info-container {
+    text-align: right;
+    padding: 10px;
+}
+
+#user-info-container img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.user-info {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#user-info {
+    position: absolute; /* Đặt vị trí tuyệt đối cho div */
+    top: 0; /* Đặt div ở phía trên cùng của trang */
+    right: 0; /* Đặt div ở phía bên phải của trang */
+}
+
+#user-icon {
+    width: 40px; /* Điều chỉnh kích thước biểu tượng người dùng */
+    height: 40px;
+    margin-right: 10px;
+}
+
+#username {
+    display: inline-block; /* Đảm bảo tên người dùng hiển thị ngang với biểu tượng */
+    vertical-align: middle; /* Căn giữa tên người dùng với biểu tượng */
+}
+

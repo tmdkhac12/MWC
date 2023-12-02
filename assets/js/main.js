@@ -85,3 +85,25 @@ function changePage(i) {
         loadItem();
     }
 }
+
+// document.addEventListener('DOMContentLoaded', function () {
+//     // Kiểm tra xem người dùng đã đăng nhập chưa
+//     const isLoggedIn = /* Thực hiện kiểm tra đăng nhập ở đây */;
+
+//     if (isLoggedIn) {
+//         // Lấy thông tin người dùng (thay thế bằng phương thức của bạn)
+//         const userInfo = /* Lấy thông tin người dùng ở đây */;
+
+//         // Hiển thị thông tin người dùng
+//         displayUserInfo(userInfo);
+//     }
+// });
+
+window.onload = function() {
+    var username = localStorage.getItem('username');
+    if (username) {
+        document.getElementById('user-name').textContent = username;
+    } else {
+        document.getElementById('user-name').textContent = "Welcome!";
+    }
+}
