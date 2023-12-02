@@ -1,6 +1,7 @@
 function searchProducts() {
     var searchTerm = document.getElementById("search-input").value.toLowerCase();
     var products = document.querySelectorAll('.products li');
+    var slsp = 0;
 
     products.forEach(function(product) {
         var productName = product.getAttribute('data-name').toLowerCase();
@@ -8,10 +9,23 @@ function searchProducts() {
 
         if (productName.includes(searchTerm)) {
             product.style.display = 'block'; // Hiển thị sản phẩm nếu tìm thấy
+            slsp++;
         } else {
             product.style.display = 'none'; // Ẩn sản phẩm nếu không tìm thấy
         }
     });
+
+    if (slsp === 0) {
+        var search_result = document.querySelector(".headline");
+        search_result.innerHTML = "Không có Sản Phẩm bạn vừa tìm!!";
+        search_result.style.float = "left";
+        search_result.style.fontSize = "28px";
+
+        var footer = document.querySelector("#footer");
+        footer.style.position = "absolute";
+        footer.style.bottom = "0";
+        footer.style.width = "100%";
+    }
 }
 
 document.getElementById("search-input").addEventListener("keydown", function(event) {

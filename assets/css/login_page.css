@@ -12,6 +12,7 @@ html {
 
 body {
   background-color: #fff;
+  font-family: Muli;
 }
 
 #header {
@@ -205,12 +206,7 @@ body {
 .container .info span .fa {
   color: #EF3B3A;
 }
-body {
-  background: #fff;
-  font-family: "Roboto", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;      
-}
+
 /* Footer */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 

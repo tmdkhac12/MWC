@@ -106,14 +106,17 @@ body {
     display: inline-block;
     position: absolute;
     bottom: 5px;
-    font-size: 14px;
+    font-size: 12px;
     text-decoration: none;
     color: #999;
+    margin-left: 3px;
 }
 
 #user p {
     display: inline-block;
     position: absolute;
+    font-size: 14px;
+    margin-top: 5px;
 }
 
 #slider img {
@@ -166,12 +169,10 @@ body {
     padding-right: 7px;
     box-sizing: border-box;
     margin-bottom: 30px;
-    /* margin-right: 20px; */
 }
 
 .products img {
     max-width: 100%;
-    /* height: 100vh; */
 }
 
 .product-infor a {
