@@ -115,7 +115,7 @@ body {
 }
 
 /* Login form */
-.login-page {
+.login-page, .signup-page {
   /* width: 360px; */
   width: 100%;
   padding: 10% 0;

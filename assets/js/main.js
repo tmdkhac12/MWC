@@ -3,47 +3,80 @@ function searchProducts() {
     var products = document.querySelectorAll('.products li');
     var slsp = 0;
 
-    products.forEach(function(product) {
+    products.forEach(function (product) {
         var productName = product.getAttribute('data-name').toLowerCase();
-        var productPrice = product.getAttribute('data-price');
 
         if (productName.includes(searchTerm)) {
             product.style.display = 'block'; // Hiển thị sản phẩm nếu tìm thấy
             slsp++;
+
+            // Xác định thẻ ul
+            if (window.location.pathname === "/index.html") {
+                var ulParent = product.closest('ul');
+                if (ulParent) {
+                    var ulId = ulParent.getAttribute('id');
+                    displayCategoryName(ulId);
+                }
+            }
         } else {
             product.style.display = 'none'; // Ẩn sản phẩm nếu không tìm thấy
         }
     });
 
     if (slsp === 0) {
-        var search_result = document.querySelector(".headline");
-        search_result.innerHTML = "Không có Sản Phẩm bạn vừa tìm!!";
-        search_result.style.float = "left";
-        search_result.style.fontSize = "28px";
+        if (window.location.pathname === "/index.html") {
+            document.querySelector("#slider img").style.display = "none";
+            document.querySelector("#slider").style.paddingTop = "60px";
+
+            var headlines = document.querySelectorAll("#wrapper .headline");
+            headlines[0].style.display = "none";
+            headlines[1].style.display = "none";
+        }
+
+        var div_wrapper = document.querySelector("#wrapper");
+        div_wrapper.innerHTML = "Không có Sản Phẩm bạn vừa tìm!!";
+        div_wrapper.style.float = "left";
+        div_wrapper.style.fontSize = "28px";
+
+        var main = document.querySelector("#main");
+        main.style.display = "flex";
+        main.style.flexDirection = "column";
+        main.style.minHeight = "100vh";
 
         var footer = document.querySelector("#footer");
-        footer.style.position = "absolute";
-        footer.style.bottom = "0";
         footer.style.width = "100%";
+        footer.style.marginTop = "auto";
     }
 }
 
-document.getElementById("search-input").addEventListener("keydown", function(event) {
-    if (event.key === "Enter") {
+function displayCategoryName(ulId) {
+    // Hiển thị chữ tương ứng với giày nam hoặc giày nữ
+    var categoryText = (ulId === 'giaynamul') ? '<h1>Giày Nam</h1>' : '<h1>Giày Nữ</h1>';
+    // Thực hiện xử lý để hiển thị chữ, ví dụ, có thể thay đổi nội dung của một phần tử trên trang
+    var categoryHeader = document.getElementById('category-header');
+
+    if (window.location.pathname === "/index.html") {
+        document.querySelector("#slider img").style.display = "none";
+
+        var headlines = document.querySelectorAll("#wrapper .headline");
+        headlines[0].style.display = "none";
+        headlines[1].style.display = "none";
+    }
+
+    categoryHeader.innerHTML = categoryText;
+    categoryHeader.style.paddingTop = "60px";
+}
+
+document.querySelector("#search-input").addEventListener("keydown", function (event) {
+    if (event.key == "Enter") {
         searchProducts();
     }
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-    // Lấy thông tin từ query string
-    const urlParams = new URLSearchParams(window.location.search);
-    const searchTerm = urlParams.get('search');
-
-    // Hiển thị thông tin tìm kiếm
-    const searchResultsDiv = document.getElementById('search-results');
-    searchResultsDiv.innerHTML = `<p>Kết quả tìm kiếm cho: <strong>${searchTerm}</strong></p>`;
-    // Thêm code để hiển thị sản phẩm dựa trên kết quả tìm kiếm
-});
+document.querySelector("#search-form").addEventListener("submit", function (event) {
+    event.preventDefault();
+    searchProducts();
+})
 
 let thisPage = 1;
 let limit = 6;
@@ -113,7 +146,7 @@ function changePage(i) {
 //     }
 // });
 
-window.onload = function() {
+window.onload = function () {
     var username = localStorage.getItem('username');
     if (username) {
         document.getElementById('user-name').textContent = username;

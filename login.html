@@ -18,8 +18,7 @@
             <a href="giaynu.html">Giày Nữ</a>
             <a href="#footer">Liên Hệ</a>
             <div class="search-container">
-                <form id="search-form" action="./search_results.html" method="get"
-                    onsubmit="searchProducts(); return false;">
+                <form id="search-form" action="" method="get">
                     <input type="text" placeholder="Tìm Kiếm..." name="search" id="search-input">
                     <button type="submit"><i class="fa fa-search"></i></button>
                 </form>
@@ -30,13 +29,25 @@
         </div>
     </div>
 
-    <div class="login-page">
+    <div class="login-page" >
         <div class="form">
-            <form class="login-form" onsubmit="return redirectToIndex()">
+            <form class="login-form" action="./logged_in.html">
                 <input id="username" type="text" placeholder="username" required>
                 <input id="password" type="password" placeholder="password" required>
                 <button type="submit">login</button>
-                <p class="message">Not registered? <a href="#">Create an account</a></p>
+                <p class="message">Not registered? <a id="signup" href="#">Create an account</a></p>
+            </form>
+        </div>
+    </div>
+
+    <div class="signup-page" style="display: none;">
+        <div class="form">
+            <form class="login-form" action="./login.html">
+                <input id="username" type="text" placeholder="username" required>
+                <input id="password" type="password" placeholder="password" required>
+                <input id="confirmPassword" type="password" placeholder="confirm password" required>
+                <button type="submit">Sign Up</button>
+                <p class="message">Already have account? <a id="login" href="#">Login</a></p>
             </form>
         </div>
     </div>
@@ -88,16 +99,20 @@
     </div>
 
     <script>
-        function redirectToIndex() {
-            var username = document.getElementById('username').value;
-            var password = document.getElementById('password').value;
-            // Lưu trữ thông tin người dùng
-            localStorage.setItem('username', username);
-            localStorage.setItem('password', password);
-            // Chuyển hướng người dùng đến trang chủ
-            window.location.href = "./logged_in.html";
-            return false; // Ngăn form gửi đi
-        }
+        var login_page = document.querySelector(".login-page");
+        var signup_page = document.querySelector(".signup-page");
+
+        var create_acc_button = document.querySelector("#signup");
+        create_acc_button.addEventListener("click", function() {
+            login_page.style.display = "none";
+            signup_page.style.display = "block";
+        })
+
+        var login_button = document.querySelector("#login");
+        login_button.addEventListener("click", function() {
+            signup_page.style.display = "none";
+            login_page.style.display = "block";
+        })
     </script>
 </body>
 
